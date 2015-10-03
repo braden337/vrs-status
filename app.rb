@@ -37,7 +37,8 @@ def checkStatus(bases)
 end
 
 get '/' do
-    erb :index, :locals => { :bases => checkStatus(basesarr) }
+  @bases = checkStatus(basesarr)
+  erb :index
 end
 
 #SocketError, EOFError, NameError, Errno::ECONNRESET, Errno::ECONNREFUSED, Errno::EHOSTUNREACH, Errno::ETIMEDOUT
