@@ -1,10 +1,15 @@
-<% for base in @bases %>
-  <div class="row" style="height: 12.5vh; padding: 0;">
-    <div class="col-xs-12 text-center bg-<%= base[:status] %>" style="height: 100%;">
-      <h2 style="font-family: sans-serif;line-height: 100%;text-shadow: 1px 1px 1px #000;
-                font-weight: bold; color: <%= base[:status] == "success" ? "white" : "black" %>">
-        <%= base[:name] %>
-        </h2>
+<div class="container-fluid">
+
+  <% for base in @bases %>
+    
+    <div class="row text-center bg-<%= base[:status] %>"
+         style="font-size: 24px; height: 12.5vh;
+                line-height: 12.5vh;">
+      
+      <%= base[:name] %>
+        
     </div>
-  </div>
-<% end %>
+    
+  <% end %>
+
+</div>
