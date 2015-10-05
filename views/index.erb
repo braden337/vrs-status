@@ -1,15 +1,19 @@
 <div class="container-fluid">
 
-  <% for base in @bases %>
+  <!--<% for base in @bases %>-->
     
-    <div class="row text-center bg-<%= base[:status] %>"
-         style="font-size: 24px; height: 12.5vh;
-                line-height: 12.5vh;">
+  <!--  <div class="row text-center bg-<%= base[:status] %>"-->
+  <!--       style="font-size: 24px; height: 12.5vh;-->
+  <!--              line-height: 12.5vh;">-->
       
-      <%= base[:name] %>
+  <!--    <%= base[:name] %>-->
         
-    </div>
+  <!--  </div>-->
     
-  <% end %>
-
+  <!--<% end %>-->
+  
+  <%= checkStatus(@bases) %>
+  
 </div>
+
+
