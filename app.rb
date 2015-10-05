@@ -1,15 +1,20 @@
 require 'sinatra'
 require 'net/http'
 
+set :bind, '0.0.0.0'
+set :port, 8080
+
+
+
 basesarr = [
             {name: "Shop", url: "http://205.200.66.50/"},
+            {name: "McGillivray", url: "http://66.244.213.166/"},
+            {name: "La Salle", url: "http://64.141.35.142/"},
+            {name: "Roblin", url: "http://206.45.135.119:81/"},
             {name: "Interlake", url: "http://199.19.62.91/"},
-            {name: "Bracken", url: "http://206.45.204.94/"},
-            {name: "Loewen", url: "http://104.153.49.53:81/"},
-            {name: "Pyziak", url: "http://104.218.46.149:81/"},
-            {name: "Tailleau", url: "http://206.45.135.119:81/"},
-            {name: "Bossuyt", url: "http://66.244.213.166/"},
-            {name: "Kirchner", url: "http://64.141.35.142/"},
+            {name: "Petersfield", url: "http://206.45.204.94/"},
+            {name: "Riverton", url: "http://104.153.49.53:81/"},
+            {name: "Fisher Branch", url: "http://104.218.46.149:81/"},
            ]
 
 def checkStatus(bases)
