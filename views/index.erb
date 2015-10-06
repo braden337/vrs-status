@@ -1,19 +1,28 @@
 <div class="container-fluid">
-
-  <!--<% for base in @bases %>-->
+  
+  <div class="row">
     
-  <!--  <div class="row text-center bg-<%= base[:status] %>"-->
-  <!--       style="font-size: 24px; height: 12.5vh;-->
-  <!--              line-height: 12.5vh;">-->
+    <div class="col-xs-12 col-lg-4 col-lg-offset-4">
       
-  <!--    <%= base[:name] %>-->
+      <ul class="list-group">
         
-  <!--  </div>-->
+        <% @bases.each do |id, base| %>
+        
+          <li id="<%= id %>" class="list-group-item list-group-item-warning">
+            
+            <span class="badge pulse">loading</span>
+            <%= base[:name] %>
+            
+          </li>
+          
+        <% end %>
+        
+      </ul>  <!-- list-group -->
+        
+      <button id="button">Click me</button>
+      
+    </div> <!-- col -->
     
-  <!--<% end %>-->
+  </div> <!-- row -->
   
-  <%= checkStatus(@bases) %>
-  
-</div>
-
-
+</div> <!-- fluid-container -->
