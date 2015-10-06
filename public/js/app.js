@@ -3,7 +3,8 @@ $(document).ready(function(){
   var keys = ["le", "bo", "ki", "ta", "br", "in", "lo", "py"];
   
   for(var i = 0; i < keys.length; i++) {
-    $.getJSON("/" + keys[i], function(data, textStatus, jqxhr) {
+    var uri = "/" + keys[i];
+    $.getJSON(uri, function(data, textStatus, jqxhr) {
       updateStatus(data, this.url.substring(1));
     });
   }
