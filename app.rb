@@ -5,7 +5,7 @@ require 'net/http'
 set :bind, '0.0.0.0'
 
 
-bases = { :le => { name: "Shop", url: "http://205.200.66.50/", status: nil },
+bases = { :le => { name: "Shop", url: "http://205.200.8.215/", status: nil },
                :bo => { name: "McGillivray", url: "http://66.244.213.166/", status: nil },
                :ki => { name: "La Salle", url: "http://64.141.35.142/", status: nil },
                :ta => { name: "Roblin", url: "http://206.45.135.119:81/", status: nil },
