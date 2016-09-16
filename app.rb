@@ -5,15 +5,15 @@ require 'net/http'
 set :bind, '0.0.0.0'
 
 
-bases = { :le => { name: "Shop", url: "http://205.200.8.215", status: nil },
-               :nh => {name: "Argyle", url: "http://199.19.61.54:90", status: nil},
-               :bo => { name: "McGillivray", url: "http://66.244.213.166", status: nil },
-               :ki => { name: "La Salle", url: "http://66.244.214.60", status: nil },
-               :ta => { name: "Roblin", url: "http://206.45.135.119:81", status: nil },
-               :br => { name: "Petersfield", url: "http://206.45.204.94", status: nil },
-               :in => { name: "Interlake", url: "http://199.19.62.91", status: nil },
-               :lo => { name: "Riverton", url: "http://104.153.49.53:81", status: nil },
-               :py => { name: "Fisher Branch", url: "http://104.218.46.149:81", status: nil } }
+bases = { :le => { name: "Shop", url: "http://205.200.8.215/", status: nil },
+               :nh => {name: "Argyle", url: "http://199.19.61.54:90/", status: nil},
+               :bo => { name: "McGillivray", url: "http://66.244.213.166/", status: nil },
+               :ki => { name: "La Salle", url: "http://66.244.214.60/", status: nil },
+               :ta => { name: "Roblin", url: "http://206.45.135.119:81/", status: nil },
+               :br => { name: "Petersfield", url: "http://206.45.204.94/", status: nil },
+               :in => { name: "Interlake", url: "http://199.19.62.91/", status: nil },
+               :lo => { name: "Riverton", url: "http://104.153.49.53:81/", status: nil },
+               :py => { name: "Fisher Branch", url: "http://104.218.46.149:81/", status: nil } }
                
 
 def checkStatus(base)
