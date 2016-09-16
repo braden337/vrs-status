@@ -1,6 +1,6 @@
 $(document).ready(function(){
   
-  var keys = ["le", "bo", "ki", "ta", "br", "in", "lo", "py"];
+  var keys = ["le", "nh", "bo", "ki", "ta", "br", "in", "lo", "py"];
   
   for(var i = 0; i < keys.length; i++) {
     var uri = "/" + keys[i];
